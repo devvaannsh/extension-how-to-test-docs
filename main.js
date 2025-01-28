@@ -27,6 +27,8 @@ define(function (require, exports, module) {
     var MY_COMMAND_ID = "helloworld.sayhello";   // package-style naming to avoid collisions
     CommandManager.register("Hello World", MY_COMMAND_ID, handleHelloWorld);
 
+    // this file is modified
+
     // Then create a menu item bound to the command
     // The label of the menu item is the name we gave the command (see above)
     var menu = Menus.getMenu(Menus.AppMenuBar.FILE_MENU);
@@ -36,6 +38,8 @@ define(function (require, exports, module) {
     //menu.addMenuItem(MY_COMMAND_ID, "Ctrl-Alt-W");
     // (Note: "Ctrl" is automatically mapped to "Cmd" on Mac)
     
+    // here a change is made
+
     // Initialize extension once shell is finished initializing.
     AppInit.appReady(function () {
         console.log("hello world");
